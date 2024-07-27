@@ -7,10 +7,10 @@ header.style.color = "white";
 header.style.padding = "1.5rem";
 header.style.textAlign = "center";
 
+//? title id sine sahip olan elementi getElementById() metodunu kullanarak yakalayınız. Ve "Javascript Dom Example" metnini textContent özelliği ile ekleyiniz.
 
-//? title id sine sahip olan elementi getElementById() metodunu kullanarak yakalayınız. Ve "Javascript Dom Assignment 1" metnini textContent özelliği ile ekleyiniz.
-
-
+const title = document.getElementById("title");
+title.textContent = "Javascript Dom Example";
 
 //? nav-item classına sahip olan elementi querySelector() metodu ile yakalayınız. Flexbox(center olsun) özelliği ekleyiniz ve elementler arasına gap özelliği ile boşluk ekleyiniz. List style özelliğini kaldırınız.
 
