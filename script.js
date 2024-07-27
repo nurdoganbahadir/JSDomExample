@@ -40,4 +40,22 @@ btn.textContent = "Giriş Yap";
 
 //? projects idsine sahip olan elementi getElementById() metodunu kullanarak yakalayınız. Yakaladığınız bu element üzerinden bu elementin first childi olan h3 elementine ulaşıp metnini "Js Dom Projects" olarak değiştiriniz.
 
+const projects = document.getElementById("projects");
+projects.firstElementChild.textContent = "Js Dom Projects";
+
 //? const myProjects = ["Hello World!","Guess Number","Checkout Page","Gelir-Gider Projesi","Api Projects"]; Verilen myProjects arrayindeki elemanları bir önceki adımda yakaladığınız projects idsine sahip olan elementin last childi olan ul elementine innerHTML özelliğini kullanarak tek tek li elementleri içerisinde child olarak ekleyiniz.
+
+const myProjects = [
+  "Hello World!",
+  "Guess Number",
+  "Checkout Page",
+  "Gelir-Gider Projesi",
+  "Api Projects",
+];
+let ulElement = projects.lastElementChild;
+
+myProjects.forEach((project) => {
+  let liElement = document.createElement("li");
+  liElement.innerHTML = project;
+  ulElement.appendChild(liElement);
+});
