@@ -29,6 +29,15 @@ password.setAttribute("placeholder", 123456);
 
 //? btn classına sahip olan elementi querySelector() metodu ile yakalayınız. Background color, color, padding, border-radius özellikleri ekleyiniz. Cursor pointer olsun ve border özelliği none olsun. Ayrıca button elementinin metni "Giriş Yap" metni olsun.
 
+const btn = document.querySelector(".btn");
+btn.style.backgroundColor = "gray";
+btn.style.color = "white";
+btn.style.padding = "0.5rem 1rem";
+btn.style.borderRadius = "5px";
+btn.style.border = "none";
+btn.style.cursor = "pointer";
+btn.textContent = "Giriş Yap";
+
 //? projects idsine sahip olan elementi getElementById() metodunu kullanarak yakalayınız. Yakaladığınız bu element üzerinden bu elementin first childi olan h3 elementine ulaşıp metnini "Js Dom Projects" olarak değiştiriniz.
 
 //? const myProjects = ["Hello World!","Guess Number","Checkout Page","Gelir-Gider Projesi","Api Projects"]; Verilen myProjects arrayindeki elemanları bir önceki adımda yakaladığınız projects idsine sahip olan elementin last childi olan ul elementine innerHTML özelliğini kullanarak tek tek li elementleri içerisinde child olarak ekleyiniz.
