@@ -22,6 +22,11 @@ navItem.style.listStyleType = "none";
 
 //? username ve password idsine sahip olan inputları querySelector() metodu ile yakalayınız. İnputların value attributelarını kullanarak Username inputuna "Anthony" yazınız, password inputuna "123456" yazınız. Ayrıca password inputuna yazılan değerin görülmesini sağlayın. Ve inputların disabled özelliğini aktif ediniz. (Not: html de input type=password olduğunda bildiğiniz üzere yazılan değerler saklanıyor. Bu özelliği js ile değiştirmeniz lazım.)
 
+const username = document.querySelector("#username");
+const password = document.querySelector("#password");
+username.setAttribute("placeholder", "Nurdoğan");
+password.setAttribute("placeholder", 123456);
+
 //? btn classına sahip olan elementi querySelector() metodu ile yakalayınız. Background color, color, padding, border-radius özellikleri ekleyiniz. Cursor pointer olsun ve border özelliği none olsun. Ayrıca button elementinin metni "Giriş Yap" metni olsun.
 
 //? projects idsine sahip olan elementi getElementById() metodunu kullanarak yakalayınız. Yakaladığınız bu element üzerinden bu elementin first childi olan h3 elementine ulaşıp metnini "Js Dom Projects" olarak değiştiriniz.
